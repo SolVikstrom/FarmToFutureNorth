@@ -78,6 +78,17 @@ body {
 
 .story.active { display: block; }
 
+body.hold-effect [data-tab="effect"],
+body.hold-effect [data-story="effect"] {
+  display: none !important;
+}
+
+body.hold-effect .whatif-go { display: none; }
+
+body.hold-effect .whatif.is-priority { cursor: default; }
+
+body.hold-effect .whatif.is-priority:hover { background: var(--lemon); }
+
 main {
   padding: 0 6vw 6rem;
 }

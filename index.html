@@ -9,10 +9,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,560;1,6..72,400&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="hold-effect">
   <header class="mast">
     <p class="brand">Farm to Future North</p>
-    <p class="deck">Stories, told in the first person. A starred note opens a suggestion for the largest effect.</p>
+    <p class="deck">Stories, told in the first person.</p>
     <nav class="tabs" aria-label="Stories">
       <button type="button" class="tab active" data-tab="customer" aria-current="page">Store customer</button>
       <button type="button" class="tab" data-tab="store">Store</button>
@@ -689,7 +689,12 @@
     const stories = document.querySelectorAll("[data-story]");
     let landedTimer = 0;
 
+    function effectIsLive() {
+      return !document.body.classList.contains("hold-effect");
+    }
+
     function showStory(id, scrollTarget) {
+      if (id === "effect" && !effectIsLive()) return;
       tabs.forEach((item) => {
         const on = item.dataset.tab === id;
         item.classList.toggle("active", on);
@@ -718,6 +723,12 @@
     });
 
     document.querySelectorAll("[data-priority]").forEach((note) => {
+      if (!effectIsLive()) {
+        note.removeAttribute("role");
+        note.removeAttribute("tabindex");
+        note.removeAttribute("aria-label");
+        return;
+      }
       note.addEventListener("click", () => showStory("effect", "#" + note.dataset.priority));
       note.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
