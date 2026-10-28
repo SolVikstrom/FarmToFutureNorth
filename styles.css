@@ -4,6 +4,7 @@
   --muted: #5c584f;
   --line: #ddd6c8;
   --mint: #adf0c7;
+  --lemon: #f4ecc0;
   --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
   --sans: "Outfit", "Segoe UI", sans-serif;
 }
@@ -106,7 +107,8 @@ main {
 
 .kicker,
 .kind,
-.hmw-label {
+.hmw-label,
+.whatif-label {
   font-size: 0.75rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -129,14 +131,21 @@ main {
   max-width: 36rem;
 }
 
-.hmw {
+.hmw,
+.whatif {
   margin-top: 1.5rem;
-  background: var(--mint);
   padding: 1.15rem 1.25rem 1.25rem;
   max-width: 28rem;
 }
 
-.hmw p:last-child {
+.hmw { background: var(--mint); }
+
+.whatif { background: var(--lemon); }
+
+.whatif + .whatif { margin-top: 0.7rem; }
+
+.hmw p:last-child,
+.whatif p:last-child {
   font-family: var(--serif);
   font-size: 1.35rem;
   line-height: 1.25;
