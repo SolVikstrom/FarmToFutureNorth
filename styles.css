@@ -132,6 +132,12 @@ main {
 }
 
 .hmw,
+.whatif,
+.suggestion {
+  scroll-margin-top: 8.5rem;
+}
+
+.hmw,
 .whatif {
   margin-top: 1.5rem;
   padding: 1.15rem 1.25rem 1.25rem;
@@ -143,6 +149,115 @@ main {
 .whatif { background: var(--lemon); }
 
 .whatif + .whatif { margin-top: 0.7rem; }
+
+.whatif.is-priority {
+  position: relative;
+  cursor: pointer;
+}
+
+.whatif.is-priority:hover { background: #efe4a8; }
+
+.whatif.is-priority:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.whatif .star {
+  position: absolute;
+  top: 0.85rem;
+  right: 1rem;
+  font-size: 0.95rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.whatif-go {
+  display: block;
+  margin-top: 0.9rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.effect-opener { grid-template-columns: minmax(0, 46rem); }
+
+.matrix {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2.5rem 3.5rem;
+  padding-bottom: 4rem;
+}
+
+.quadrant {
+  min-width: 0;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.quadrant > h2 {
+  font-family: var(--serif);
+  font-weight: 560;
+  font-size: clamp(1.7rem, 2.4vw, 2.3rem);
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+  margin: 0.2rem 0 0.6rem;
+}
+
+.quadrant-note {
+  color: var(--muted);
+  max-width: 34rem;
+  margin-bottom: 0.4rem;
+}
+
+.quadrant.is-open { min-height: 12rem; }
+
+.suggestion {
+  max-width: none;
+  padding: 2rem 0 0.4rem;
+  border-bottom: 0;
+}
+
+.suggestion h2 {
+  font-family: var(--serif);
+  font-weight: 560;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+  margin-bottom: 0.4rem;
+}
+
+.suggestion .kicker .star {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.suggestion-lead {
+  margin-top: 1.2rem;
+  max-width: 36rem;
+}
+
+.reach {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.1rem;
+  margin-top: 1.15rem;
+}
+
+.reach a {
+  color: var(--ink);
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  border-bottom: 1px solid var(--ink);
+}
+
+.hmw.is-landed,
+.suggestion.is-landed {
+  outline: 2px solid var(--ink);
+  outline-offset: 6px;
+}
 
 .hmw p:last-child,
 .whatif p:last-child {
@@ -185,4 +300,10 @@ figure img {
   .opener-copy h1 { max-width: none; }
 
   figure img { max-height: 62vh; }
+
+  .hmw,
+  .whatif,
+  .suggestion { scroll-margin-top: 1rem; }
+
+  .matrix { grid-template-columns: 1fr; }
 }

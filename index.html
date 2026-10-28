@@ -12,12 +12,13 @@
 <body>
   <header class="mast">
     <p class="brand">Farm to Future North</p>
-    <p class="deck">Four stories, told in the first person. Choose one and read from the role downward.</p>
+    <p class="deck">Four stories, told in the first person. A starred note opens a suggestion for the largest effect.</p>
     <nav class="tabs" aria-label="Stories">
       <button type="button" class="tab active" data-tab="customer" aria-current="page">Store customer</button>
       <button type="button" class="tab" data-tab="store">Store</button>
       <button type="button" class="tab" data-tab="municipality">Municipality</button>
       <button type="button" class="tab" data-tab="tourist">Tourist</button>
+      <button type="button" class="tab" data-tab="effect">Largest effect</button>
     </nav>
   </header>
 
@@ -41,17 +42,21 @@
           <p class="kind">Motivation</p>
           <h2>Habit and routine</h2>
           <p>As a store customer, I return to products I already like. When I look for a new recipe, I turn to cooks I trust, food apps, and cooking shows.</p>
-          <aside class="hmw">
+          <aside class="hmw" id="hmw-customer-habit">
             <p class="hmw-label">How might we</p>
             <p>introduce a new brand, or a new food, into a habit that already feels settled?</p>
           </aside>
-          <aside class="whatif">
+          <aside class="whatif is-priority" data-priority="effect-influencers" tabindex="0" role="link" aria-label="Open the suggestion to prioritize influencers and producer stories">
+            <span class="star" aria-hidden="true">★</span>
             <p class="whatif-label">What if</p>
             <p>we connected local influencers and food enthusiasts with local food producers, or helped producers use AI to generate engaging content?</p>
+            <span class="whatif-go">Largest effect</span>
           </aside>
-          <aside class="whatif">
+          <aside class="whatif is-priority" data-priority="effect-ica" tabindex="0" role="link" aria-label="Open the suggestion to prioritize local food in store recipes and apps">
+            <span class="star" aria-hidden="true">★</span>
             <p class="whatif-label">What if</p>
             <p>large stores like ICA could promote local food in their recipes and apps?</p>
+            <span class="whatif-go">Largest effect</span>
           </aside>
         </div>
       </section>
@@ -64,7 +69,7 @@
           <p class="kind">Motivation</p>
           <h2>Convenience</h2>
           <p>As a store customer, I want everything in one place, in the shop or online. Extra time and extra errands matter to me.</p>
-          <aside class="hmw">
+          <aside class="hmw" id="hmw-customer-convenience">
             <p class="hmw-label">How might we</p>
             <p>make local food the easy, one-stop choice rather than a separate errand?</p>
           </aside>
@@ -79,13 +84,15 @@
           <p class="kind">Motivation</p>
           <h2>Preferences and values</h2>
           <p>As a store customer, diet, health, and the climate are important to me. I also want a feeling of belonging with the place the food comes from.</p>
-          <aside class="hmw">
+          <aside class="hmw" id="hmw-customer-values">
             <p class="hmw-label">How might we</p>
             <p>create incentives to support local food that feel as natural as the habit itself?</p>
           </aside>
-          <aside class="whatif">
+          <aside class="whatif is-priority" data-priority="effect-day" tabindex="0" role="link" aria-label="Open the suggestion to prioritize a national Local Food Day">
+            <span class="star" aria-hidden="true">★</span>
             <p class="whatif-label">What if</p>
             <p>we started a national Local Food Day, like Cinnamon Bun Day?</p>
+            <span class="whatif-go">Largest effect</span>
           </aside>
         </div>
       </section>
@@ -113,17 +120,21 @@
           <p class="kind">Threshold</p>
           <h2>Budget</h2>
           <p>As a store customer, the food has to fit my household budget. I judge the value at the moment I buy.</p>
-          <aside class="hmw">
+          <aside class="hmw" id="hmw-customer-budget">
             <p class="hmw-label">How might we</p>
             <p>adjust the price so it feels attractive, while the producer still earns a living?</p>
           </aside>
-          <aside class="whatif">
+          <aside class="whatif is-priority" data-priority="effect-ribbon" tabindex="0" role="link" aria-label="Open the suggestion to prioritize monthly support for local food">
+            <span class="star" aria-hidden="true">★</span>
             <p class="whatif-label">What if</p>
             <p>supporting local became as strong a statement as the Pink Ribbon, for example through monthly donors?</p>
+            <span class="whatif-go">Largest effect</span>
           </aside>
-          <aside class="whatif">
+          <aside class="whatif is-priority" data-priority="effect-coupons" tabindex="0" role="link" aria-label="Open the suggestion to prioritize municipal nudge coupons">
+            <span class="star" aria-hidden="true">★</span>
             <p class="whatif-label">What if</p>
             <p>municipalities supported local food producers with themed nudge coupons for residents?</p>
+            <span class="whatif-go">Largest effect</span>
           </aside>
         </div>
       </section>
@@ -193,7 +204,7 @@
           <p class="kind">Motivation</p>
           <h2>Turnover</h2>
           <p>As a store, I need the product to leave my shelf before it becomes waste. A slow jar costs me more than an empty space.</p>
-          <aside class="hmw">
+          <aside class="hmw" id="hmw-store-turnover">
             <p class="hmw-label">How might we</p>
             <p>help local food leave the shelf before it spoils?</p>
           </aside>
@@ -208,7 +219,7 @@
           <p class="kind">Threshold</p>
           <h2>Margin</h2>
           <p>As a store, my margin has to pay for the shelf. If the numbers do not work per metre, I do not keep the product.</p>
-          <aside class="hmw">
+          <aside class="hmw" id="hmw-store-margin">
             <p class="hmw-label">How might we</p>
             <p>earn the shelf when the margin has to carry the space?</p>
           </aside>
@@ -266,7 +277,7 @@
           <p class="kind">Threshold</p>
           <h2>Price per portion</h2>
           <p>As a municipality, I have a fixed maximum cost per portion. A fair price for the producer still has to fit inside my number.</p>
-          <aside class="hmw">
+          <aside class="hmw" id="hmw-municipality-price">
             <p class="hmw-label">How might we</p>
             <p>fit a fair producer price inside a fixed cost per portion?</p>
           </aside>
@@ -323,7 +334,7 @@
           <p class="kind">Motivation</p>
           <h2>Authenticity</h2>
           <p>As a tourist, I stop for local ingredients, traditions, and the people behind the food. The product alone is not the whole reason I am here.</p>
-          <aside class="hmw">
+          <aside class="hmw" id="hmw-tourist-authenticity">
             <p class="hmw-label">How might we</p>
             <p>highlight the personal stories of producers?</p>
           </aside>
@@ -338,7 +349,7 @@
           <p class="kind">Motivation</p>
           <h2>Arctic identity</h2>
           <p>As a tourist, pristine nature, the seasons, wild ingredients, and a northern way of life are what make this food feel of the place to me.</p>
-          <aside class="hmw">
+          <aside class="hmw" id="hmw-tourist-arctic">
             <p class="hmw-label">How might we</p>
             <p>make Arctic origin visible and easy to recognise?</p>
           </aside>
@@ -353,7 +364,7 @@
           <p class="kind">Motivation</p>
           <h2>Souvenirs and memories</h2>
           <p>As a tourist, I want a jar or a bite I can take home, and talk about later.</p>
-          <aside class="hmw">
+          <aside class="hmw" id="hmw-tourist-souvenir">
             <p class="hmw-label">How might we</p>
             <p>make local food an attractive souvenir?</p>
           </aside>
@@ -368,7 +379,7 @@
           <p class="kind">Threshold</p>
           <h2>Easy to find</h2>
           <p>As a tourist, I need the food where I already am: hotels, restaurants, attractions, airports, and online.</p>
-          <aside class="hmw">
+          <aside class="hmw" id="hmw-tourist-find">
             <p class="hmw-label">How might we</p>
             <p>make Arctic food easy for tourists to discover?</p>
           </aside>
@@ -390,26 +401,171 @@
         </div>
       </section>
     </article>
+
+    <article class="story" id="effect" data-story="effect">
+      <section class="opener effect-opener">
+        <div class="opener-copy">
+          <p class="kicker">Suggestion</p>
+          <h1>Prioritize this for the largest effect.</h1>
+          <p class="aside-line">In the double diamond, test a large effect when the effort is small. A large effect that needs a partner, a budget, or a new organisation can wait. The empty boxes are for ideas still to come.</p>
+        </div>
+      </section>
+
+      <div class="matrix">
+        <section class="quadrant">
+          <p class="kicker">Large effect · small effort</p>
+          <h2>Test these first</h2>
+          <p class="quadrant-note">The project can try these without a new organisation.</p>
+
+          <section class="suggestion" id="effect-influencers">
+            <p class="kicker"><span class="star" aria-hidden="true">★</span> 3 journeys</p>
+            <h2>Influencers and producer stories</h2>
+            <aside class="whatif">
+              <p class="whatif-label">What if</p>
+              <p>we connected local influencers and food enthusiasts with local food producers, or helped producers use AI to generate engaging content?</p>
+            </aside>
+            <p class="suggestion-lead">Small effort to test. Two or three producers and a few stories, in a place people already look. See whether a customer, a store, or a visitor responds before anyone is paid to post.</p>
+            <ul class="reach">
+              <li><a href="#hmw-customer-habit" data-goto="customer">Store customer · Habit and routine</a></li>
+              <li><a href="#hmw-store-turnover" data-goto="store">Store · Turnover</a></li>
+              <li><a href="#hmw-tourist-authenticity" data-goto="tourist">Tourist · Authenticity</a></li>
+              <li><a href="#hmw-tourist-find" data-goto="tourist">Tourist · Easy to find</a></li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="quadrant">
+          <p class="kicker">Large effect · large effort</p>
+          <h2>Keep, and test smaller</h2>
+          <p class="quadrant-note">The effect is real. A fair test needs a partner, money, or a host.</p>
+
+          <section class="suggestion" id="effect-day">
+        <p class="kicker"><span class="star" aria-hidden="true">★</span> 3 journeys</p>
+        <h2>A national Local Food Day</h2>
+        <aside class="whatif">
+          <p class="whatif-label">What if</p>
+          <p>we started a national Local Food Day, like Cinnamon Bun Day?</p>
+        </aside>
+        <p class="suggestion-lead">Large effort if it has to be a national day. It still crosses three journeys, so it stays. The test that fits this project is one Saturday in one place, with producers who are already there.</p>
+        <ul class="reach">
+          <li><a href="#hmw-customer-values" data-goto="customer">Store customer · Preferences and values</a></li>
+          <li><a href="#hmw-customer-habit" data-goto="customer">Store customer · Habit and routine</a></li>
+          <li><a href="#hmw-store-turnover" data-goto="store">Store · Turnover</a></li>
+          <li><a href="#hmw-tourist-arctic" data-goto="tourist">Tourist · Arctic identity</a></li>
+          <li><a href="#hmw-tourist-souvenir" data-goto="tourist">Tourist · Souvenirs</a></li>
+        </ul>
+      </section>
+
+      <section class="suggestion" id="effect-ribbon">
+        <p class="kicker"><span class="star" aria-hidden="true">★</span> 3 journeys</p>
+        <h2>Support local, like the Pink Ribbon</h2>
+        <aside class="whatif">
+          <p class="whatif-label">What if</p>
+          <p>supporting local became as strong a statement as the Pink Ribbon, for example through monthly donors?</p>
+        </aside>
+        <p class="suggestion-lead">Large effort. A mark people trust, and a monthly gift, need a host and a way to pay. Ask whether anyone would give before any of that is built.</p>
+        <ul class="reach">
+          <li><a href="#hmw-customer-budget" data-goto="customer">Store customer · Budget</a></li>
+          <li><a href="#hmw-customer-values" data-goto="customer">Store customer · Preferences and values</a></li>
+          <li><a href="#hmw-store-margin" data-goto="store">Store · Margin</a></li>
+          <li><a href="#hmw-municipality-price" data-goto="municipality">Municipality · Price per portion</a></li>
+        </ul>
+      </section>
+
+      <section class="suggestion" id="effect-ica">
+        <p class="kicker"><span class="star" aria-hidden="true">★</span> 2 journeys</p>
+        <h2>Local food in the store’s recipes</h2>
+        <aside class="whatif">
+          <p class="whatif-label">What if</p>
+          <p>large stores like ICA could promote local food in their recipes and apps?</p>
+        </aside>
+        <p class="suggestion-lead">Large effort as written, because it depends on a chain and its app. A few recipes in one shop can test the same behaviour without waiting for the app.</p>
+        <ul class="reach">
+          <li><a href="#hmw-customer-habit" data-goto="customer">Store customer · Habit and routine</a></li>
+          <li><a href="#hmw-customer-convenience" data-goto="customer">Store customer · Convenience</a></li>
+          <li><a href="#hmw-store-turnover" data-goto="store">Store · Turnover</a></li>
+        </ul>
+      </section>
+
+      <section class="suggestion" id="effect-coupons">
+        <p class="kicker"><span class="star" aria-hidden="true">★</span> 2 journeys</p>
+        <h2>Themed nudge coupons</h2>
+        <aside class="whatif">
+          <p class="whatif-label">What if</p>
+          <p>municipalities supported local food producers with themed nudge coupons for residents?</p>
+        </aside>
+        <p class="suggestion-lead">Large effort. Someone has to pay the discount, and a municipality has to run it. The effect on the price is direct, and it is not a small test.</p>
+        <ul class="reach">
+          <li><a href="#hmw-customer-budget" data-goto="customer">Store customer · Budget</a></li>
+          <li><a href="#hmw-customer-convenience" data-goto="customer">Store customer · Convenience</a></li>
+          <li><a href="#hmw-store-turnover" data-goto="store">Store · Turnover</a></li>
+        </ul>
+          </section>
+        </section>
+
+        <section class="quadrant is-open">
+          <p class="kicker">Small effect · small effort</p>
+          <h2>Room for later</h2>
+          <p class="quadrant-note">None of the first notes land here. Later ideas can.</p>
+        </section>
+
+        <section class="quadrant is-open">
+          <p class="kicker">Small effect · large effort</p>
+          <h2>Set aside</h2>
+          <p class="quadrant-note">None of the first notes land here. An idea that costs a lot and moves little can sit here.</p>
+        </section>
+      </div>
+    </article>
   </main>
 
   <script>
     const tabs = document.querySelectorAll("[data-tab]");
     const stories = document.querySelectorAll("[data-story]");
+    let landedTimer = 0;
 
-    tabs.forEach((tab) => {
-      tab.addEventListener("click", () => {
-        const id = tab.dataset.tab;
-        tabs.forEach((item) => {
-          const on = item === tab;
-          item.classList.toggle("active", on);
-          if (on) item.setAttribute("aria-current", "page");
-          else item.removeAttribute("aria-current");
+    function showStory(id, scrollTarget) {
+      tabs.forEach((item) => {
+        const on = item.dataset.tab === id;
+        item.classList.toggle("active", on);
+        if (on) item.setAttribute("aria-current", "page");
+        else item.removeAttribute("aria-current");
+      });
+      stories.forEach((story) => {
+        story.classList.toggle("active", story.dataset.story === id);
+      });
+      const target = scrollTarget ? document.querySelector(scrollTarget) : null;
+      if (target) {
+        requestAnimationFrame(() => {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          document.querySelectorAll(".is-landed").forEach((item) => item.classList.remove("is-landed"));
+          target.classList.add("is-landed");
+          window.clearTimeout(landedTimer);
+          landedTimer = window.setTimeout(() => target.classList.remove("is-landed"), 1800);
         });
-        stories.forEach((story) => {
-          story.classList.toggle("active", story.dataset.story === id);
-        });
+      } else {
         const top = document.querySelector("main").offsetTop;
         window.scrollTo({ top: Math.max(0, top - 12), behavior: "smooth" });
+      }
+    }
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => showStory(tab.dataset.tab));
+    });
+
+    document.querySelectorAll("[data-priority]").forEach((note) => {
+      note.addEventListener("click", () => showStory("effect", "#" + note.dataset.priority));
+      note.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          note.click();
+        }
+      });
+    });
+
+    document.querySelectorAll("[data-goto]").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        showStory(link.dataset.goto, link.getAttribute("href"));
       });
     });
   </script>
