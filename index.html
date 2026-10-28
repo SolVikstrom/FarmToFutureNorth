@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farm to Future North</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,560;1,6..72,400&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="mast">
+    <p class="brand">Farm to Future North</p>
+    <p class="deck">Four people a local food producer has to reach. Read one story from the person downward: what they want, what moves them, and what gets in the way.</p>
+    <nav class="tabs" aria-label="Stories">
+      <button type="button" class="tab active" data-tab="customer" aria-current="page">Store customer</button>
+      <button type="button" class="tab" data-tab="store">Store</button>
+      <button type="button" class="tab" data-tab="municipality">Municipality</button>
+      <button type="button" class="tab" data-tab="tourist">Tourist</button>
+    </nav>
+  </header>
+
+  <main>
+    <article class="story active" id="customer" data-story="customer">
+      <section class="opener">
+        <div class="opener-copy">
+          <p class="kicker">01 · Store customer</p>
+          <h1>In my role as a consumer, I want to buy food and ingredients, so that I can meet my own and my loved ones’ need for food.</h1>
+        </div>
+        <figure>
+          <img src="images/consumer-open.jpg" alt="A person choosing vegetables in a quiet small grocery.">
+        </figure>
+      </section>
+
+      <section class="beat">
+        <figure>
+          <img src="images/consumer-habit.jpg" alt="A familiar loaf and a jar on a kitchen table in morning light.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Motivation</p>
+          <h2>Habit and routine</h2>
+          <p>People return to products they already like. New recipes arrive through cooks they trust, food apps, and cooking shows.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>introduce a new brand, or a new food, into a habit that already feels settled?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat beat-flip">
+        <figure>
+          <img src="images/consumer-convenience.jpg" alt="One paper bag of groceries on a doorstep.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Motivation</p>
+          <h2>Convenience</h2>
+          <p>They want everything in one place, in the shop or online, with as little extra time and logistics as possible.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>make local food the easy, one-stop choice rather than a separate errand?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat">
+        <figure>
+          <img src="images/consumer-values.jpg" alt="Hands holding a bunch of local root vegetables.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Motivation</p>
+          <h2>Preferences and values</h2>
+          <p>Diet, health, and the climate matter. So does a feeling of belonging with the place the food comes from.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>create incentives to support local food that feel as natural as the habit itself?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat beat-flip">
+        <figure>
+          <img src="images/consumer-sensory.jpg" alt="A hand resting on fresh produce at a market stall.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Threshold</p>
+          <h2>Sensory quality</h2>
+          <p>They need to see and feel fresh food: the look, the smell, and whether it will last at home.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>let people judge freshness before they have to trust a label?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat">
+        <figure>
+          <img src="images/consumer-budget.jpg" alt="A simple home meal on a plain plate, modest and unstyled.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Threshold</p>
+          <h2>Budget</h2>
+          <p>The food has to fit the household food budget. Value is judged at the moment of purchase.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>adjust the price so it feels attractive, while the producer still earns a living?</p>
+          </aside>
+        </div>
+      </section>
+    </article>
+
+    <article class="story" id="store" data-story="store">
+      <section class="opener">
+        <div class="opener-copy">
+          <p class="kicker">02 · Store</p>
+          <h1>In my role as a store operator, I want to buy and display food, so that I can sell it with a good profit per metre of shelf.</h1>
+        </div>
+        <figure>
+          <img src="images/store-open.jpg" alt="A shopkeeper behind a wooden counter with a few local food products.">
+        </figure>
+      </section>
+
+      <section class="beat">
+        <figure>
+          <img src="images/store-standard.jpg" alt="Plain food packages lined up on a shallow shop shelf.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Threshold</p>
+          <h2>Standardisation</h2>
+          <p>The chain expects GS1 barcodes and pack sizes that fit the shelf. A beautiful product that does not fit does not get a place.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>meet the shelf rules without erasing the local story?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat beat-flip">
+        <figure>
+          <img src="images/store-logistics.jpg" alt="A wooden crate of food waiting by a shop back door.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Threshold</p>
+          <h2>Logistics</h2>
+          <p>Goods should arrive through the central warehouse, or as an approved direct delivery. Anything else is extra work.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>enter the chain’s logistics and still keep the local story intact?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat">
+        <figure>
+          <img src="images/store-terms.jpg" alt="A few unsold greens left in a crate at the end of the day.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Threshold</p>
+          <h2>Returns and terms</h2>
+          <p>Unsold goods, campaign prices, and a purchase price that stays steady through the season all have to be agreed in advance.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>write terms for unsold food that a small producer can actually live with?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat beat-flip">
+        <figure>
+          <img src="images/store-turnover.jpg" alt="A nearly empty shelf with two remaining jars.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Motivation</p>
+          <h2>Turnover</h2>
+          <p>The product has to leave the shelf before it becomes waste. A slow jar costs more than an empty space.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>help local food leave the shelf before it spoils?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat">
+        <figure>
+          <img src="images/store-margin.jpg" alt="A small till and a short row of products in a quiet shop.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Threshold</p>
+          <h2>Margin</h2>
+          <p>The retail margin has to pay for the shelf. If the numbers do not work per metre, the product does not stay.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>earn the shelf when the margin has to carry the space?</p>
+          </aside>
+        </div>
+      </section>
+    </article>
+
+    <article class="story" id="municipality" data-story="municipality">
+      <section class="opener">
+        <div class="opener-copy">
+          <p class="kicker">03 · Municipality</p>
+          <h1>In my role as a meal service, I want to buy food, so that I can serve nutritious meals every day.</h1>
+          <p class="aside-line">School kitchens, health care, and social care.</p>
+        </div>
+        <figure>
+          <img src="images/municipality-open.jpg" alt="A calm institutional kitchen with a simple meal being plated onto a tray.">
+        </figure>
+      </section>
+
+      <section class="beat">
+        <figure>
+          <img src="images/municipality-rules.jpg" alt="A plain folder beside a kitchen pass, with no readable writing.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Threshold</p>
+          <h2>Rules and procurement</h2>
+          <p>Specifications, framework agreements, and certification decide who is allowed to sell. The process is strict, and hard for a small producer to enter.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>pass public procurement rules without shutting out small producers?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat beat-flip">
+        <figure>
+          <img src="images/municipality-delivery.jpg" alt="An insulated food box on a loading dock in cool morning light.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Threshold</p>
+          <h2>Delivery reliability</h2>
+          <p>Meals leave at fixed times. The cold chain cannot break, and an empty order is not an option.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>promise the clock, the cold chain, and a full delivery?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat">
+        <figure>
+          <img src="images/municipality-price.jpg" alt="One simple plated meal on a stainless tray.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Threshold</p>
+          <h2>Price per portion</h2>
+          <p>There is a fixed maximum cost per portion. A fair price for the producer still has to fit inside that number.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>fit a fair producer price inside a fixed cost per portion?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat beat-flip">
+        <figure>
+          <img src="images/municipality-admin.jpg" alt="A single neat stack of plain papers next to a kitchen phone.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Motivation</p>
+          <h2>Administrative ease</h2>
+          <p>Few invoices and one combined delivery are easier to live with than many small suppliers arriving separately.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>make one hub as easy to use as one wholesaler?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat">
+        <figure>
+          <img src="images/municipality-volume.jpg" alt="Several identical meal trays lined up on a kitchen counter.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Motivation</p>
+          <h2>Volume and scale</h2>
+          <p>Several kitchens together can carry a steady order through the term, even when one kitchen’s need shifts.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>let several kitchens share one steady order?</p>
+          </aside>
+        </div>
+      </section>
+    </article>
+
+    <article class="story" id="tourist" data-story="tourist">
+      <section class="opener">
+        <div class="opener-copy">
+          <p class="kicker">04 · Tourist</p>
+          <h1>In my role as a tourist, I want to experience authentic local flavours and food culture, so that I can connect with the place and enjoy something I cannot find at home.</h1>
+        </div>
+        <figure>
+          <img src="images/tourist-open.jpg" alt="A visitor at a small table by a window, with a simple plate and a pale northern landscape outside.">
+        </figure>
+      </section>
+
+      <section class="beat">
+        <figure>
+          <img src="images/tourist-authenticity.jpg" alt="A producer’s hands and a few jars on a wooden table.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Motivation</p>
+          <h2>Authenticity</h2>
+          <p>Local ingredients, traditions, and the people behind the food are the reason to stop. The product alone is not the whole draw.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>highlight the personal stories of producers?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat beat-flip">
+        <figure>
+          <img src="images/tourist-arctic.jpg" alt="A bowl of wild herbs on a windowsill with snow and low northern light outside.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Motivation</p>
+          <h2>Arctic identity</h2>
+          <p>Pristine nature, the seasons, wild ingredients, and a northern way of life are what make the food feel of this place.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>make Arctic origin visible and easy to recognise?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat">
+        <figure>
+          <img src="images/tourist-souvenir.jpg" alt="A small jar wrapped in plain paper, ready to be carried home.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Motivation</p>
+          <h2>Souvenirs and memories</h2>
+          <p>A jar or a bite can be a piece of the trip to take home, and to talk about later.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>make local food an attractive souvenir?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat beat-flip">
+        <figure>
+          <img src="images/tourist-find.jpg" alt="A few local jars on a quiet shelf in a hotel lobby.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Threshold</p>
+          <h2>Easy to find</h2>
+          <p>The food has to be where tourists already are: hotels, restaurants, attractions, airports, and online.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>make Arctic food easy for tourists to discover?</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="beat">
+        <figure>
+          <img src="images/tourist-value.jpg" alt="A clear glass and a small plate on a linen cloth, with no printed menu.">
+        </figure>
+        <div class="beat-copy">
+          <p class="kind">Threshold</p>
+          <h2>Value must be obvious</h2>
+          <p>Visitors will pay more for a memorable experience, but only when the origin and the story are easy to understand.</p>
+          <aside class="hmw">
+            <p class="hmw-label">How might we</p>
+            <p>make the extra price feel obvious, in a language a visitor can read?</p>
+          </aside>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <script>
+    const tabs = document.querySelectorAll("[data-tab]");
+    const stories = document.querySelectorAll("[data-story]");
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const id = tab.dataset.tab;
+        tabs.forEach((item) => {
+          const on = item === tab;
+          item.classList.toggle("active", on);
+          if (on) item.setAttribute("aria-current", "page");
+          else item.removeAttribute("aria-current");
+        });
+        stories.forEach((story) => {
+          story.classList.toggle("active", story.dataset.story === id);
+        });
+        const top = document.querySelector("main").offsetTop;
+        window.scrollTo({ top: Math.max(0, top - 12), behavior: "smooth" });
+      });
+    });
+  </script>
+</body>
+</html>
