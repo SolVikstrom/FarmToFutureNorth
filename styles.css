@@ -197,6 +197,14 @@ main {
   grid-template-columns: minmax(0, 42rem);
 }
 
+#idea .beat-copy > p + p {
+  margin-top: 1.15rem;
+}
+
+#idea .point {
+  font-weight: 500;
+}
+
 .matrix {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
