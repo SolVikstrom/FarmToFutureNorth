@@ -193,6 +193,10 @@ main {
 
 .effect-opener { grid-template-columns: minmax(0, 46rem); }
 
+#idea .beat {
+  grid-template-columns: minmax(0, 42rem);
+}
+
 .matrix {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
