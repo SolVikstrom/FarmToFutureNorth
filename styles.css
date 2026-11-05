@@ -307,6 +307,14 @@ figure img {
 
 .opener figure img { max-height: 78vh; }
 
+#idea .opener figure {
+  background: transparent;
+}
+
+#idea .opener figure img {
+  object-fit: contain;
+}
+
 @media (max-width: 800px) {
   .mast { position: static; }
 
