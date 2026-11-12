@@ -9,13 +9,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,560;1,6..72,400&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="hold-effect">
+<body class="hold-effect hold-idea">
   <header class="mast">
     <p class="brand">Farm to Future North</p>
     <p class="deck">Stories, told in the first person.</p>
     <nav class="tabs" aria-label="Stories">
-      <button type="button" class="tab active" data-tab="idea" aria-current="page">The idea</button>
-      <button type="button" class="tab" data-tab="platform">KONCEPT: Plattform</button>
+      <button type="button" class="tab" data-tab="idea">The idea</button>
+      <button type="button" class="tab active" data-tab="platform" aria-current="page">Overarching koncept: The local food catalyst</button>
       <button type="button" class="tab" data-tab="process">Process</button>
       <button type="button" class="tab" data-tab="customer">Store customer</button>
       <button type="button" class="tab" data-tab="store">Store Owner</button>
@@ -28,7 +28,7 @@
   </header>
 
   <main>
-    <article class="story active" id="idea" data-story="idea">
+    <article class="story" id="idea" data-story="idea">
       <section class="opener">
         <div class="opener-copy">
           <p class="kicker">01 · The idea</p>
@@ -92,8 +92,11 @@
 
     </article>
 
-    <article class="story" id="platform" data-story="platform">
+    <article class="story active" id="platform" data-story="platform">
       <section class="opener">
+        <figure>
+          <img src="images/catalyst-fan.jpg" alt="A food producer above the local food catalyst, fanning out to a store customer, a store owner, a tourist, a restaurant, and public meals.">
+        </figure>
         <div class="opener-copy">
           <p class="kicker">Konceptutforskning</p>
           <h1>Local Food Catalyst</h1>
@@ -782,8 +785,13 @@
       return !document.body.classList.contains("hold-effect");
     }
 
+    function ideaIsLive() {
+      return !document.body.classList.contains("hold-idea");
+    }
+
     function showStory(id, scrollTarget) {
       if (id === "effect" && !effectIsLive()) return;
+      if (id === "idea" && !ideaIsLive()) return;
       tabs.forEach((item) => {
         const on = item.dataset.tab === id;
         item.classList.toggle("active", on);

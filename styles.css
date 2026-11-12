@@ -79,7 +79,9 @@ body {
 .story.active { display: block; }
 
 body.hold-effect [data-tab="effect"],
-body.hold-effect [data-story="effect"] {
+body.hold-effect [data-story="effect"],
+body.hold-idea [data-tab="idea"],
+body.hold-idea [data-story="idea"] {
   display: none !important;
 }
 
@@ -206,7 +208,20 @@ h2[id] {
   font-weight: 500;
 }
 
-#platform .opener,
+#platform .opener {
+  grid-template-columns: minmax(0, 46rem);
+}
+
+#platform .opener figure {
+  background: transparent;
+  margin-bottom: 2.4rem;
+}
+
+#platform .opener figure img {
+  object-fit: contain;
+  max-height: 68vh;
+}
+
 #platform .beat {
   grid-template-columns: minmax(0, 42rem);
 }
