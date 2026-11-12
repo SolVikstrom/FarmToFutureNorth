@@ -15,6 +15,7 @@
     <p class="deck">Stories, told in the first person.</p>
     <nav class="tabs" aria-label="Stories">
       <button type="button" class="tab active" data-tab="idea" aria-current="page">The idea</button>
+      <button type="button" class="tab" data-tab="process">Process</button>
       <button type="button" class="tab" data-tab="customer">Store customer</button>
       <button type="button" class="tab" data-tab="store">Store Owner</button>
       <button type="button" class="tab" data-tab="municipality">Public meal provider</button>
@@ -84,6 +85,67 @@
           <p class="kind">Understory</p>
           <h2>From ego to ecosystem</h2>
           <p>Shifts the narrative from the isolated smallholder to a connected collective that speaks as a unified ‘WE’. By coordinating social campaigns, co-hosting creator takeovers, cross-promoting products, and sharing audiences, producers turn culinary craft into a shared sales magnet rather than a lonely marketing battle.</p>
+        </div>
+      </section>
+    </article>
+
+    </article>
+
+    <article class="story" id="process" data-story="process">
+      <section class="process">
+        <p class="kicker">The path</p>
+        <h1>From the food producer to the buyer.</h1>
+        <p class="process-lead">Pain points already named on the persona pages, in the order the food has to travel.</p>
+        <div class="flow">
+          <section class="stage">
+            <p class="kicker">01</p>
+            <h2>Food producer</h2>
+            <p>Expose the harvest at the right time, in the right place, with the right story.</p>
+            <a class="pain" href="#hmw-raw-ripening" data-goto="raw"><strong>Season and volume</strong><span>Harvest and volume follow the weather and the season, while customers and contracts want the same range all year.</span></a>
+            <a class="pain" href="#hmw-raw-price" data-goto="raw"><strong>Price and effort</strong><span>It is difficult to capture fair value for the labour and resources, while keeping a workable mix of sales channels.</span></a>
+            <a class="pain" href="#hmw-raw-delivery" data-goto="raw"><strong>Transport and distribution</strong><span>Delivery to dispersed customers is unviable until orders reach a volume that can share the cost.</span></a>
+          </section>
+
+          <section class="stage">
+            <p class="kicker">02</p>
+            <h2>Who takes the food in</h2>
+            <p>Buyers who sell it on, or cook it for others.</p>
+            <div class="buyer">
+              <h3>Store Owner</h3>
+              <a class="pain" href="#pain-store-standard" data-goto="store"><strong>Standardisation</strong><span>Shelves need barcodes, packaging, and inventory routines. Local goods outside those baselines are costly to handle.</span></a>
+              <a class="pain" href="#pain-store-logistics" data-goto="store"><strong>Logistics integration</strong><span>The dock expects consolidated, scheduled deliveries. Many small drops create bottlenecks the staff cannot absorb.</span></a>
+              <a class="pain" href="#pain-store-terms" data-goto="store"><strong>Returns and terms</strong><span>Predictable margins and protection against shelf waste lead to fixed prices and return clauses.</span></a>
+              <a class="pain" href="#hmw-store-turnover" data-goto="store"><strong>Turnover and margin</strong><span>Every shelf metre must earn its keep. Slow local products create waste the margin cannot defend.</span></a>
+            </div>
+            <div class="buyer">
+              <h3>Public meal provider</h3>
+              <a class="pain" href="#pain-meals-rules" data-goto="municipality"><strong>Rules and procurement</strong><span>Framework agreements and volume rules can shut out individual smallholders.</span></a>
+              <a class="pain" href="#pain-meals-delivery" data-goto="municipality"><strong>Deliveries and invoices</strong><span>Kitchens need one predictable delivery and one invoice. Many small producers add complexity they cannot absorb.</span></a>
+              <a class="pain" href="#hmw-municipality-price" data-goto="municipality"><strong>Cost per portion</strong><span>Fixed cost-per-portion limits leave no room for a higher price from a small producer.</span></a>
+            </div>
+            <div class="buyer">
+              <h3>Restaurants</h3>
+              <a class="pain" href="#restaurant" data-goto="restaurant"><strong>The want, so far</strong><span>Serve food that attracts local residents, tourists, and press. Pain points for this buyer are not written yet.</span></a>
+            </div>
+          </section>
+
+          <section class="stage">
+            <p class="kicker">03</p>
+            <h2>Who eats it</h2>
+            <p>The person at the end of the path.</p>
+            <div class="buyer">
+              <h3>Store customer</h3>
+              <a class="pain" href="#hmw-customer-habit" data-goto="customer"><strong>Habit and routine</strong><span>Familiar brands and trusted inspiration make a new local product feel like a risk.</span></a>
+              <a class="pain" href="#hmw-customer-convenience" data-goto="customer"><strong>Convenience</strong><span>Groceries belong in one cart. An extra stop or website costs too much time.</span></a>
+              <a class="pain" href="#hmw-customer-values" data-goto="customer"><strong>Preferences and values</strong><span>The choice follows diet, health, climate, the issues they care about, or a feeling of belonging.</span></a>
+              <a class="pain" href="#hmw-customer-budget" data-goto="customer"><strong>Budget</strong><span>Food spending has to stay inside a strict limit.</span></a>
+            </div>
+            <div class="buyer">
+              <h3>Tourist</h3>
+              <a class="pain" href="#hmw-tourist-authenticity" data-goto="tourist"><strong>Arctic experience</strong><span>They want authentic flavours, seasonal traditions, and the people behind them.</span></a>
+              <a class="pain" href="#hmw-tourist-find" data-goto="tourist"><strong>Touchpoints and souvenirs</strong><span>Local food has to show up on the journey, and travel home as something shelf-stable.</span></a>
+            </div>
+          </section>
         </div>
       </section>
     </article>
@@ -211,7 +273,7 @@
         </figure>
         <div class="beat-copy">
           <p class="kind">Threshold</p>
-          <h2>Standardisation</h2>
+          <h2 id="pain-store-standard">Standardisation</h2>
           <p>As a retailer, all products on our shelves must comply with standardized barcodes, packaging footprints, and inventory routines. If local goods fall outside these operational baselines, handling them manually simply becomes too costly and complex for our staff.</p>
           <aside class="hmw">
             <p class="hmw-label">How might we</p>
@@ -226,7 +288,7 @@
         </figure>
         <div class="beat-copy">
           <p class="kind">Threshold</p>
-          <h2>Logistics integration</h2>
+          <h2 id="pain-store-logistics">Logistics integration</h2>
           <p>As a grocery store, our receiving docks rely on consolidated, scheduled deliveries—either via the central warehouse or approved distribution routes. Managing fragmented, individual deliveries from multiple small suppliers creates administrative and operational bottlenecks our store staff cannot absorb.</p>
           <aside class="hmw">
             <p class="hmw-label">How might we</p>
@@ -241,7 +303,7 @@
         </figure>
         <div class="beat-copy">
           <p class="kind">Threshold</p>
-          <h2>Returns and terms</h2>
+          <h2 id="pain-store-terms">Returns and terms</h2>
           <p>As a grocery store, I need predictable margins and protection against shelf waste, so I default to standard contracts with fixed prices and return clauses on unsold stock.</p>
           <aside class="hmw">
             <p class="hmw-label">How might we</p>
@@ -292,7 +354,7 @@
         </figure>
         <div class="beat-copy">
           <p class="kind">Threshold</p>
-          <h2>Rules and procurement</h2>
+          <h2 id="pain-meals-rules">Rules and procurement</h2>
           <p>As a municipality, public procurement rules and rigid framework agreements often steer us toward volume requirements and certifications that may inadvertently exclude individual smallholders.</p>
           <aside class="hmw">
             <p class="hmw-label">How might we</p>
@@ -307,7 +369,7 @@
         </figure>
         <div class="beat-copy">
           <p class="kind">Threshold</p>
-          <h2>Deliveries and invoices</h2>
+          <h2 id="pain-meals-delivery">Deliveries and invoices</h2>
           <p>As a municipal meals department, our kitchens rely on predictable, consolidated deliveries and single-invoice billing to keep meal schedules on track. Coordinating multiple small-scale producers with varying delivery times, broken cold chains, and fragmented paperwork adds operational complexity our kitchens and administration cannot absorb.</p>
           <aside class="hmw">
             <p class="hmw-label">How might we</p>
