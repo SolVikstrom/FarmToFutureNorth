@@ -81,7 +81,9 @@ body {
 body.hold-effect [data-tab="effect"],
 body.hold-effect [data-story="effect"],
 body.hold-idea [data-tab="idea"],
-body.hold-idea [data-story="idea"] {
+body.hold-idea [data-story="idea"],
+body.hold-process [data-tab="process"],
+body.hold-process [data-story="process"] {
   display: none !important;
 }
 
@@ -220,6 +222,15 @@ h2[id] {
 #platform .opener figure img {
   object-fit: contain;
   max-height: 68vh;
+}
+
+#platform .opener-copy .lead {
+  max-width: 36rem;
+  margin-top: 1.15rem;
+}
+
+#platform .opener-copy .aside-line + .lead {
+  margin-top: 1.6rem;
 }
 
 #platform .beat {
