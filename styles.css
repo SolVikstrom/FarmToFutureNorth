@@ -249,6 +249,67 @@ h2[id] {
   margin-top: 1.15rem;
 }
 
+#platform .fold {
+  max-width: 36rem;
+  margin-top: 1.75rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1.05rem;
+}
+
+#platform .fold summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--serif);
+  font-weight: 560;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+#platform .fold summary::-webkit-details-marker,
+#platform .fold summary::marker {
+  display: none;
+  content: "";
+}
+
+#platform .fold summary::before {
+  content: "+";
+  flex: 0 0 auto;
+  width: 1rem;
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 1.35rem;
+  line-height: 1.15;
+}
+
+#platform .fold[open] summary::before {
+  content: "\2212";
+}
+
+#platform .fold summary:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+#platform .fold-body {
+  margin-top: 1.15rem;
+}
+
+#platform .fold-body > p + p {
+  margin-top: 1.15rem;
+}
+
+#platform .fold .hmw {
+  max-width: none;
+}
+
+#platform .fold .hmw + .hmw {
+  margin-top: 0.7rem;
+}
+
 #platform .point {
   font-weight: 500;
 }
