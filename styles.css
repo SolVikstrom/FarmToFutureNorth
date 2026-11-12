@@ -235,8 +235,58 @@ h2[id] {
   border-bottom: 1px solid var(--line);
 }
 
-#platform h3 a:hover {
+#platform h3 a:hover,
+#platform .beat-copy a:hover,
+.iface a:hover {
   border-bottom-color: var(--ink);
+}
+
+#platform .beat.wide {
+  grid-template-columns: minmax(0, 72rem);
+}
+
+#platform .beat-copy a,
+.iface a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.iface {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.6rem;
+}
+
+.iface th {
+  text-align: left;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--muted);
+  padding: 0 1.25rem 0.7rem 0;
+  border-bottom: 1px solid var(--ink);
+}
+
+.iface td {
+  vertical-align: top;
+  padding: 1rem 1.25rem 1rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.98rem;
+}
+
+.iface td:first-child {
+  font-weight: 500;
+  width: 22%;
+}
+
+.iface td span {
+  display: block;
+  margin-top: 0.25rem;
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .matrix {
@@ -455,4 +505,42 @@ figure img {
   .matrix { grid-template-columns: 1fr; }
 
   .flow { grid-template-columns: 1fr; }
+
+  .iface thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  .iface,
+  .iface tbody,
+  .iface tr,
+  .iface td,
+  .iface td:first-child {
+    display: block;
+    width: auto;
+  }
+
+  .iface tr {
+    padding: 1rem 0 0.4rem;
+    border-top: 1px solid var(--ink);
+  }
+
+  .iface td {
+    border-bottom: 0;
+    padding: 0.35rem 0;
+  }
+
+  .iface td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 0.2rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--muted);
+  }
 }
