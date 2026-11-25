@@ -230,7 +230,7 @@ body.hold-effect .whatif.is-priority:hover { background: var(--lemon); }
 }
 
 .brief-split .brief-stack {
-  max-width: none;
+  max-width: 36rem;
   padding: 0;
 }
 
