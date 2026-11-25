@@ -278,6 +278,10 @@ body.hold-effect .whatif.is-priority:hover { background: var(--lemon); }
   margin-top: 1rem;
 }
 
+.zone-note > p + p {
+  margin-top: 0.85rem;
+}
+
 .zone-note .point {
   font-family: var(--sans);
   font-size: 0.82rem;
