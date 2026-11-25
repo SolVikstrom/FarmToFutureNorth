@@ -251,19 +251,14 @@ body.hold-effect .whatif.is-priority:hover { background: var(--lemon); }
 }
 
 .zone-num {
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 0.35rem;
-}
-
-.zone-head h2 {
   font-family: var(--serif);
+  font-size: clamp(1.45rem, 2.4vw, 1.9rem);
   font-weight: 560;
   letter-spacing: -0.03em;
   line-height: 1.15;
-  font-size: clamp(1.45rem, 2.4vw, 1.9rem);
+  text-transform: none;
+  color: var(--ink);
+  margin-bottom: 0;
 }
 
 .zone-sub {
