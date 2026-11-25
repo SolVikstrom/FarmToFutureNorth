@@ -83,7 +83,21 @@ body.hold-effect [data-story="effect"],
 body.hold-idea [data-tab="idea"],
 body.hold-idea [data-story="idea"],
 body.hold-process [data-tab="process"],
-body.hold-process [data-story="process"] {
+body.hold-process [data-story="process"],
+body.hold-platform [data-tab="platform"],
+body.hold-platform [data-story="platform"],
+body.hold-customer [data-tab="customer"],
+body.hold-customer [data-story="customer"],
+body.hold-store [data-tab="store"],
+body.hold-store [data-story="store"],
+body.hold-municipality [data-tab="municipality"],
+body.hold-municipality [data-story="municipality"],
+body.hold-tourist [data-tab="tourist"],
+body.hold-tourist [data-story="tourist"],
+body.hold-restaurant [data-tab="restaurant"],
+body.hold-restaurant [data-story="restaurant"],
+body.hold-raw [data-tab="raw"],
+body.hold-raw [data-story="raw"] {
   display: none !important;
 }
 
@@ -92,6 +106,60 @@ body.hold-effect .whatif-go { display: none; }
 body.hold-effect .whatif.is-priority { cursor: default; }
 
 body.hold-effect .whatif.is-priority:hover { background: var(--lemon); }
+
+.brief {
+  max-width: 42rem;
+  padding: 4.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.brief .kicker {
+  margin-bottom: 0.85rem;
+}
+
+.brief h1 {
+  font-family: var(--serif);
+  font-weight: 560;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  max-width: 18ch;
+}
+
+.brief .coming {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+#leadership .beat,
+#marketing .beat,
+#ai .beat,
+#hotel .beat,
+#sidestream .beat {
+  grid-template-columns: minmax(0, 42rem);
+}
+
+#leadership .beat-copy > p + p,
+#marketing .beat-copy > p + p,
+#ai .beat-copy > p + p,
+#hotel .beat-copy > p + p,
+#sidestream .beat-copy > p + p {
+  margin-top: 1.15rem;
+}
+
+#marketing .opener-copy h2 {
+  font-family: var(--serif);
+  font-weight: 560;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  max-width: 22ch;
+}
+
+#marketing .point {
+  font-weight: 500;
+}
 
 main {
   padding: 0 6vw 6rem;
