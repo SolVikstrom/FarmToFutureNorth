@@ -169,10 +169,25 @@ body.hold-effect .whatif.is-priority:hover { background: var(--lemon); }
 }
 
 .insight p:last-child,
-.barrier p:last-child {
+.barrier > p:not(.barrier-label) {
   font-family: var(--serif);
   font-size: 1.35rem;
   line-height: 1.25;
+}
+
+.barrier > p:not(.barrier-label) + p {
+  margin-top: 1rem;
+}
+
+.barrier .point {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--muted);
 }
 
 .whatif > p + p {
