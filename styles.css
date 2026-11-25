@@ -148,17 +148,8 @@ body.hold-effect .whatif.is-priority:hover { background: var(--lemon); }
   margin-top: 1.15rem;
 }
 
-#marketing .opener-copy h2 {
-  font-family: var(--serif);
-  font-weight: 560;
-  letter-spacing: -0.03em;
-  line-height: 1.12;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
-  max-width: 22ch;
-}
-
-#marketing .point {
-  font-weight: 500;
+.whatif > p + p {
+  margin-top: 0.85rem;
 }
 
 main {
