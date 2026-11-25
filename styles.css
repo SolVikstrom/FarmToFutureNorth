@@ -127,10 +127,78 @@ body.hold-effect .whatif.is-priority:hover { background: var(--lemon); }
   max-width: 18ch;
 }
 
-.brief .coming {
+.brief .coming,
+.brief .aside-line {
   margin-top: 1.5rem;
   color: var(--muted);
   font-size: 1.05rem;
+}
+
+.next-link {
+  margin-top: 1.4rem;
+  padding-top: 0.35rem;
+}
+
+.next-link a {
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 0.15rem;
+}
+
+.next-link a:hover {
+  color: var(--muted);
+  border-bottom-color: var(--muted);
+}
+
+.steps {
+  list-style: none;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+  max-width: 40rem;
+  counter-reset: step;
+}
+
+.steps li {
+  counter-increment: step;
+  display: grid;
+  grid-template-columns: 2.2rem minmax(0, 1fr);
+  gap: 0.85rem 1rem;
+  align-items: start;
+}
+
+.steps li::before {
+  content: counter(step, decimal-leading-zero);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  padding-top: 0.2rem;
+}
+
+.steps strong {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  grid-column: 2;
+}
+
+.steps span {
+  grid-column: 2;
+  color: var(--ink);
+  max-width: 36rem;
+}
+
+#next .beat {
+  grid-template-columns: minmax(0, 42rem);
 }
 
 .brief-split {
