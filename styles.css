@@ -206,7 +206,13 @@ body.hold-effect .whatif.is-priority:hover { background: var(--lemon); }
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   gap: 3.5rem 4rem;
   align-items: start;
-  padding: 2rem 0 5rem;
+  padding: 2rem 0 3rem;
+}
+
+.brief-split + .brief-split {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  border-top: 1px solid var(--line);
 }
 
 .brief-split > figure {
