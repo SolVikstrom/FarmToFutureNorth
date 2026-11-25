@@ -267,9 +267,11 @@ body.hold-effect .whatif.is-priority:hover { background: var(--lemon); }
 }
 
 .zone-sub {
-  margin-top: 0.35rem;
+  margin-top: 0.45rem;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  max-width: 38rem;
 }
 
 .zone-note {
