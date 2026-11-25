@@ -5,6 +5,7 @@
   --line: #ddd6c8;
   --mint: #adf0c7;
   --lemon: #f4ecc0;
+  --rose: #f3c9d4;
   --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
   --sans: "Outfit", "Segoe UI", sans-serif;
 }
@@ -132,24 +133,58 @@ body.hold-effect .whatif.is-priority:hover { background: var(--lemon); }
   font-size: 1.05rem;
 }
 
+.brief-stack {
+  max-width: 36rem;
+  padding: 2rem 0 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.insight,
+.barrier,
+.brief-stack .hmw,
+.brief-stack .whatif {
+  margin-top: 0;
+  max-width: none;
+  padding: 1.15rem 1.25rem 1.25rem;
+}
+
+.insight {
+  background: var(--rose);
+}
+
+.barrier {
+  padding-left: 0.15rem;
+  padding-right: 0.15rem;
+}
+
+.insight-label,
+.barrier-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.8rem;
+}
+
+.insight p:last-child,
+.barrier p:last-child {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.whatif > p + p {
+  margin-top: 0.85rem;
+}
+
 #leadership .beat,
 #marketing .beat,
 #ai .beat,
 #hotel .beat,
 #sidestream .beat {
   grid-template-columns: minmax(0, 42rem);
-}
-
-#leadership .beat-copy > p + p,
-#marketing .beat-copy > p + p,
-#ai .beat-copy > p + p,
-#hotel .beat-copy > p + p,
-#sidestream .beat-copy > p + p {
-  margin-top: 1.15rem;
-}
-
-.whatif > p + p {
-  margin-top: 0.85rem;
 }
 
 main {
